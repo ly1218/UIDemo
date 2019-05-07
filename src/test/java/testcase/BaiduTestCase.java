@@ -25,7 +25,6 @@ public class BaiduTestCase {
     @Test
     public void test() {
         BaiBuStep step = new BaiBuStep(driver);
-
         step.testBaidu();
     }
 

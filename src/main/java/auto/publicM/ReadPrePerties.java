@@ -9,10 +9,10 @@ import java.util.Properties;
 public class ReadPrePerties {
 
     public static String readGetKey(String key) {
-        File f = new File("");
+        File f = new File(System.getProperty("user.dir")+"/src/conf/config.properties");
         FileInputStream fin = null;
         try {
-            new FileInputStream(f);
+           fin= new FileInputStream(f);
         } catch (Exception e) {
             e.printStackTrace();
         }

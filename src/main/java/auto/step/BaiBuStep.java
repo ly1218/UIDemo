@@ -2,6 +2,7 @@ package auto.step;
 
 import auto.element.testBaiDuElement;
 
+import auto.publicM.ReadPrePerties;
 import org.openqa.selenium.WebDriver;
 
 
@@ -16,10 +17,8 @@ public class BaiBuStep {
     }
 
     public void testBaidu(){
-
-       // Logger log = LogManager.getLogger(testBaidu.class);
         testBaiDuElement ele = new testBaiDuElement(driver);
-        driver.get("http://www.baidu.com");
+        driver.get(ReadPrePerties.readGetKey("webUrl"));
         ele.inputB.sendKeys("李艳");
         try{
             Thread.sleep(3000);
