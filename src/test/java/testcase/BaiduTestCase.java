@@ -19,7 +19,7 @@ public class BaiduTestCase {
 
     @BeforeTest
     public void beforeTest() {
-        driver = dr.openDriver();
+        this.driver = dr.openDriver();
     }
 
     @Test

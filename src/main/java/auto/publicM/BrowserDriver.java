@@ -27,7 +27,7 @@ public class BrowserDriver {
         return null;
     }
 
-    public BrowserDriver(WebDriver webdriver) {
-        this.driver = driver;
+    public BrowserDriver(WebDriver driver) {
+        this.webdriver = driver;
     }
 }
