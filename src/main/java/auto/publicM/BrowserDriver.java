@@ -17,7 +17,6 @@ public class BrowserDriver {
         System.setProperty("webdriver.chrome.driver", driver.pathChromeDriver);
         this.webdriver = new ChromeDriver();
         webdriver.manage().window().maximize();
-
         return webdriver;
 
     }
